@@ -10,7 +10,7 @@
         android:id="@+id/mapView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:mapbox_cameraZoom="8"/>
+        app:mapbox_cameraZoom="8" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_location_search"
@@ -18,8 +18,17 @@
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
         android:layout_margin="16dp"
-        android:tint="@android:color/white"
         android:backgroundTint="@color/colorPrimary"
-        app:srcCompat="@android:drawable/ic_search_category_default"/>
+        android:tint="@android:color/white"
+        app:srcCompat="@android:drawable/ic_search_category_default" />
+
+    <Button
+        android:id="@+id/btn_nav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/start_navigation"
+        android:textColor="#FFFFFF" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
